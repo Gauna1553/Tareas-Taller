@@ -1,5 +1,21 @@
 <div class="row g-4">
-  <h1>!proyecto work</h1>
+  <form>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Ingrese su correo electronico</label>
+    <input type="email" class="form-control" id="exampleInputEmail" placeholder="name@example.com">
+    <br>
+    <label for="exampleFormControlInput1" class="form-label">Nombre Completo</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+    <br>
+    <label for="exampleFormControlInput1" class="form-label">Ingrese su Numero de Telefono</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Telefono">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Ingrese su Consulta</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <input type="submit" value = "Enviar">
+</form>
   <div class="container">
     <router-outlet></router-outlet>
   </div>
