@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IProducto } from 'interface/producto';
 
 @Component({
   selector: 'app-producto',
@@ -6,17 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./producto.component.css']
 })
 export class ProductoComponent implements OnInit {
-  personas = [{
-    nombre: "Gabriel",
-    apellido: "Gauna",
-    edad: 17,
-    apodo: "Gauna, Gabi, Negro"
-  },
+
+productos: IProducto [] = [
   {
-    nombre: "Gabriel",
-    apellido: "Gauna",
-    edad: 17,
-    apodo: "Gauna, Gabi, Negro"
+    nombre: "botines",
+    marca: "Adidas",
+    categoria: "calzado",
+    precio: 15500
   }
 ]
 
